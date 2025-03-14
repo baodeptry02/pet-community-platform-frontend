@@ -20,7 +20,7 @@ import {shareAdoptionPostAPI} from "../../../apis/post";
 import { toast } from "sonner";
 
 const ShareButton = ({ post }) => {
-  const postUrl = `${window.location.origin}/post/${post._id}`;
+  const postUrl = `${window.location.origin}/adoptDetail/${post._id}`;
   const postTitle = post.title;
 
   const [isOpen, setIsOpen] = React.useState(false);
